@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz App</title>
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Quiz App</h1>
+
+  <div class="quiz hidden">
+    <h3>Question:</h3>
+    <ul class="quiz-question"></ul>
+    <h3 class="response">Answers:</h3>
+    <ul class="quiz-answers unclicked"></ul>
+  </div>
+
+  <div class="finished hidden">
+    <h2>Congratulations! You've finished.</h2>
+    <h3>You scored <span class="totalScore"></span> out of 10 points.</h3>
+    <h3>Select Start to play again.</h3>
+  </div>
+
+  <div class="footer">
+    <div class="progress"></div>
+    <div class="score"></div>
+    <button id="next" class="hidden">Next</button>
+    <button id="start">Start</button>
+  </div>
+</div>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+ <script type="text/javascript" src="js/index.js"></script>
+ <script type="text/javascript" src="js/functions.js"></script>
+ <script type="text/javascript" src="js/eventListeners.js"></script>
+</body>
+</html>
